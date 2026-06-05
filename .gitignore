@@ -1,0 +1,21 @@
+# Local caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Training checkpoints and model weights
+*.pt
+*.pth
+*.ckpt
+*.zip
+**/checkpoints/
+
+# Runtime logs
+*.log
+*.err
+*.pid
+
+# Optional local tools/config
+.env
+.venv/
+venv/

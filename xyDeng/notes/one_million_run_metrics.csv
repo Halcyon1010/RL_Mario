@@ -1,0 +1,3 @@
+"method","run_name","device","episodes","best_step","best_val_mean_max_x","best_test_mean_max_x","train_max_x","val_sample_max_x","test_sample_max_x"
+"ICM","xyDeng_ppo_icm_1m_cuda_seed1_1780669071","cuda","7480","900000","1237.2","785.0","3161","2008","1442"
+"Disagreement","xyDeng_ppo_disagreement_1m_cpu_seed1_1780679739","cpu","7994","950000","1140.8","784.6","3161","2021","1634"

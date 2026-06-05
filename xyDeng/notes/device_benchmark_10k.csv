@@ -1,0 +1,5 @@
+"method","device","experiment_name","seconds","steps","seconds_per_1k"
+"icm","cpu","xyDeng_bench_icm_cpu_10k","118.84","10000","11.88"
+"icm","cuda","xyDeng_bench_icm_cuda_10k","85.41","10000","8.54"
+"disagreement","cpu","xyDeng_bench_disagreement_cpu_10k","120.14","10000","12.01"
+"disagreement","cuda","xyDeng_bench_disagreement_cuda_10k","134.27","10000","13.43"
