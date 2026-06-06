@@ -81,6 +81,17 @@ Full notes:
 
 `xyDeng/notes/world1_eval_video_summary.md`
 
+## Training Completion Audit
+
+Completion evidence is summarized in:
+
+`xyDeng/notes/training_completion_audit.md`
+
+Key conclusion:
+
+- Disagreement has strict training-time completion evidence in `xyDeng_ppo_disagreement_world1_eval_1m_seed1_1780716237`: 10 episodes with `episode_flag_get=1`.
+- ICM did not record `episode_flag_get` in the original 1M run, but reached `episode_final_x_pos=3161` and `episode_max_x_pos=3161` four times. Treat this as strong inferred completion evidence, not strict counted flag evidence.
+
 ## What To Commit
 
 Commit CSV/JSON metrics, plots, videos, and notes.

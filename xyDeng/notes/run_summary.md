@@ -77,3 +77,10 @@ For report wording:
 - Strong evidence: both ICM and Disagreement produced far-reaching training episodes, with `max_x_pos=3161`.
 - Reproducible video evidence: Disagreement produced the best recorded rollout among sampled checkpoints, reaching `max_x_pos=2009`.
 - Conservative claim boundary: no recorded sample video fully completes the level, and the logs do not include an explicit `flag_get` column.
+
+## Completion Audit Update
+
+See `xyDeng/notes/training_completion_audit.md`.
+
+- Disagreement is strictly confirmed to complete the level during training in `xyDeng_ppo_disagreement_world1_eval_1m_seed1_1780716237`: 10 training episodes have `episode_flag_get=1`.
+- ICM did not log `episode_flag_get` in `xyDeng_ppo_icm_1m_cuda_seed1_1780669071`, but it reached `episode_final_x_pos=3161` and `episode_max_x_pos=3161` four times. This is strong inferred completion evidence, not strict counted flag evidence.
