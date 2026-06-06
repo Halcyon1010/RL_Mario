@@ -1,0 +1,3 @@
+split,eval_mode,global_step,global_decision_step,approx_global_env_frame_step,env_id,episode,ext_reward,int_reward,total_reward,decision_steps,approx_env_frame_steps,final_x_pos,max_x_pos,mean_x_pos,timeout,max_episode_steps,frame_skip
+test,greedy,10000,10000,40000,SuperMarioBros-1-1-v0,0,250.0,0.0,250.0,30,120,314,314,153.26666666666668,0,3000,4
+test,sample,10000,10000,40000,SuperMarioBros-1-1-v0,0,1298.0,0.0,1298.0,232,928,1401,1401,718.125,0,3000,4

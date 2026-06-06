@@ -1,0 +1,82 @@
+{
+  "global_step": 10000,
+  "best_model_eval_mode": "sample",
+  "val": {
+    "greedy": {
+      "mean_ext_reward": -415.0,
+      "mean_int_reward": 0.0,
+      "mean_total_reward": -415.0,
+      "mean_max_x_pos": 40.0,
+      "mean_decision_steps": 2005.0
+    },
+    "sample": {
+      "mean_ext_reward": 616.0,
+      "mean_int_reward": 0.0,
+      "mean_total_reward": 616.0,
+      "mean_max_x_pos": 693.0,
+      "mean_decision_steps": 103.0
+    }
+  },
+  "test": {
+    "greedy": {
+      "mean_ext_reward": -415.0,
+      "mean_int_reward": 0.0,
+      "mean_total_reward": -415.0,
+      "mean_max_x_pos": 40.0,
+      "mean_decision_steps": 2005.0
+    },
+    "sample": {
+      "mean_ext_reward": 970.0,
+      "mean_int_reward": 0.0,
+      "mean_total_reward": 970.0,
+      "mean_max_x_pos": 1132.0,
+      "mean_decision_steps": 529.0
+    }
+  },
+  "test_episodes": {
+    "greedy": [
+      {
+        "split": "test",
+        "eval_mode": "greedy",
+        "global_step": 10000,
+        "global_decision_step": 10000,
+        "approx_global_env_frame_step": 40000,
+        "env_id": "SuperMarioBros-1-1-v0",
+        "episode": 0,
+        "ext_reward": -415.0,
+        "int_reward": 0.0,
+        "total_reward": -415.0,
+        "decision_steps": 2005,
+        "approx_env_frame_steps": 8020,
+        "final_x_pos": 40,
+        "max_x_pos": 40,
+        "mean_x_pos": 40.0,
+        "timeout": 0,
+        "max_episode_steps": 3000,
+        "frame_skip": 4
+      }
+    ],
+    "sample": [
+      {
+        "split": "test",
+        "eval_mode": "sample",
+        "global_step": 10000,
+        "global_decision_step": 10000,
+        "approx_global_env_frame_step": 40000,
+        "env_id": "SuperMarioBros-1-1-v0",
+        "episode": 0,
+        "ext_reward": 970.0,
+        "int_reward": 0.0,
+        "total_reward": 970.0,
+        "decision_steps": 529,
+        "approx_env_frame_steps": 2116,
+        "final_x_pos": 1132,
+        "max_x_pos": 1132,
+        "mean_x_pos": 661.1890359168242,
+        "timeout": 0,
+        "max_episode_steps": 3000,
+        "frame_skip": 4
+      }
+    ]
+  }
+}

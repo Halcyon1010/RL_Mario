@@ -1,0 +1,3 @@
+﻿$env:PYTHONPATH='C:\Users\250010109\data\RL_projects\real_mario_project\RL_Mario;C:\Users\250010109\data\RL_projects\real_mario_project\RL_Mario\rllte'
+Set-Location 'C:\Users\250010109\data\RL_projects\real_mario_project\RL_Mario'
+& 'C:\Users\250010109\AppData\Local\miniconda3\envs\mario\python.exe' -m experiments.ppo_disagreement --config configs/ppo_disagreement_world1_eval.yaml --experiment-name xyDeng_ppo_disagreement_world1_eval_1m --run-dir 'C:\Users\250010109\data\RL_projects\RL_Mario\xyDeng\runs' --no-wandb > 'C:\Users\250010109\data\RL_projects\RL_Mario\xyDeng\notes\xyDeng_ppo_disagreement_world1_eval_1m_cpu.stdout.log' 2> 'C:\Users\250010109\data\RL_projects\RL_Mario\xyDeng\notes\xyDeng_ppo_disagreement_world1_eval_1m_cpu.stderr.log'

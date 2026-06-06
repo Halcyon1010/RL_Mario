@@ -1,0 +1,66 @@
+experiment:
+  name: xyDeng_bench_icm_cuda_10k
+  seed: 1
+  run_dir: C:\Users\250010109\data\RL_projects\RL_Mario\xyDeng\runs
+env:
+  train_env_id: SuperMarioBros-1-1-v0
+  val_env_ids:
+  - SuperMarioBros-1-1-v0
+  test_env_ids:
+  - SuperMarioBros-1-1-v0
+  eval_env_ids:
+  - SuperMarioBros-1-1-v0
+  action_space: SIMPLE_MOVEMENT
+  frame_skip: 4
+  frame_stack: 4
+  image_size: 84
+  train_max_episode_steps: 3000
+  val_max_episode_steps: 3000
+  test_max_episode_steps: 3000
+  eval_max_episode_steps: 3000
+training:
+  total_timesteps: 10000
+  rollout_steps: 128
+  update_epochs: 2
+  minibatch_size: 64
+  learning_rate: 0.0001
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_coef: 0.1
+  value_coef: 0.5
+  entropy_coef: 0.05
+  max_grad_norm: 0.5
+  target_kl: 0.03
+  reward_clip: true
+  reward_clip_low: -1.0
+  reward_clip_high: 1.0
+  eval_interval: 10000
+  eval_episodes: 1
+  test_episodes: 1
+  eval_modes:
+  - greedy
+  - sample
+  best_model_eval_mode: sample
+  save_interval: 10000
+  device: cuda
+reward:
+  intrinsic:
+    enabled: true
+    type: icm
+    beta: 0.001
+    kappa: 0.0
+    gamma: null
+    rwd_norm_type: none
+    obs_norm_type: none
+    latent_dim: 128
+    lr: 0.0001
+    batch_size: 32
+    update_proportion: 1.0
+    encoder_model: mnih
+    weight_init: orthogonal
+wandb:
+  enabled: false
+  project: mario-intrinsic-ppo
+  entity: null
+  mode: online
+  secrets_path: secrets/wandb.json

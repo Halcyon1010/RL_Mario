@@ -1,0 +1,31 @@
+{
+  "summary": {
+    "mean_ext_reward": 606.0,
+    "mean_int_reward": 0.0,
+    "mean_total_reward": 606.0,
+    "mean_max_x_pos": 686.0,
+    "mean_decision_steps": 112.0
+  },
+  "episodes": [
+    {
+      "split": "test",
+      "eval_mode": "sample",
+      "global_step": 10000,
+      "global_decision_step": 10000,
+      "approx_global_env_frame_step": 40000,
+      "env_id": "SuperMarioBros-1-1-v0",
+      "episode": 0,
+      "ext_reward": 606.0,
+      "int_reward": 0.0,
+      "total_reward": 606.0,
+      "decision_steps": 112,
+      "approx_env_frame_steps": 448,
+      "final_x_pos": 686,
+      "max_x_pos": 686,
+      "mean_x_pos": 377.86607142857144,
+      "timeout": 0,
+      "max_episode_steps": 3000,
+      "frame_skip": 4
+    }
+  ]
+}
