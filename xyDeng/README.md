@@ -72,7 +72,7 @@ Best-of-64 sample videos:
 
 | Level | Max x_pos | Flag reached | Video |
 |---|---:|---:|---|
-| 1-1 | 2473 | 0 | `xyDeng/videos/world1_eval/world-1-1_ppo_step_800000_best_of_64.mp4` |
+| 1-1 | 2473 | 0 | `xyDeng/videos/world1_eval/world-1-1_ppo_step_800000_best_of_64_terminal_hold.mp4` |
 | 1-2 | 1938 | 0 | `xyDeng/videos/world1_eval/world-1-2_best_max_x_best_of_64.mp4` |
 | 1-3 | 775 | 0 | `xyDeng/videos/world1_eval/world-1-3_best_max_x_best_of_64.mp4` |
 | 1-4 | 1229 | 0 | `xyDeng/videos/world1_eval/world-1-4_best_max_x_best_of_64.mp4` |
