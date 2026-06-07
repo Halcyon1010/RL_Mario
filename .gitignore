@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+env/
+*.egg-info/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Secrets and trackers
+.env
+.env.*
+secrets/
+wandb/
+
+# Generated training outputs
+runs/
+outputs/
+videos/
+long_logs/
+smoke_logs/
+
+# Raw archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Keep curated evidence folders
+!results/
+!results/**
+!media/
+!media/**
+!docs/
+!docs/**
+!docs/**

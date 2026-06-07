@@ -1,0 +1,16 @@
+services:
+  mario-rl:
+    build:
+      context: .
+    container_name: mario-rl
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SDL_VIDEODRIVER=dummy
+      - WANDB_API_KEY=${WANDB_API_KEY:-}
+      - WANDB_MODE=${WANDB_MODE:-online}
+    stdin_open: true
+    tty: true
+    command: bash
