@@ -50,3 +50,18 @@ Use this conservative wording:
 
 Avoid claiming that the original ICM and original Disagreement runs both have explicit `flag_get` evidence. They do not.
 
+## 2026-06-07 update
+
+ICM has now been retrained with the same `episode_flag_get` logging convention:
+
+- Run: `xyDeng_ppo_icm_flag_1m_seed1_1780796302`
+- Training episodes with `episode_flag_get=1`: 6
+- First logged flag completion: `global_step=82450`, `episode=577`
+
+Pure PPO was also added with the same logging convention:
+
+- Run: `xyDeng_ppo_extrinsic_flag_1m_seed1_1780806585`
+- Training episodes with `episode_flag_get=1`: 10
+- First logged flag completion: `global_step=21765`, `episode=135`
+
+For the current report, use `xyDeng/notes/flag_consistent_1m_summary.md` as the primary comparison across ICM, Disagreement, and PPO.

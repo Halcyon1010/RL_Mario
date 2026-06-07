@@ -87,10 +87,15 @@ Completion evidence is summarized in:
 
 `xyDeng/notes/training_completion_audit.md`
 
+Updated flag-consistent comparison:
+
+`xyDeng/notes/flag_consistent_1m_summary.md`
+
 Key conclusion:
 
-- Disagreement has strict training-time completion evidence in `xyDeng_ppo_disagreement_world1_eval_1m_seed1_1780716237`: 10 episodes with `episode_flag_get=1`.
-- ICM did not record `episode_flag_get` in the original 1M run, but reached `episode_final_x_pos=3161` and `episode_max_x_pos=3161` four times. Treat this as strong inferred completion evidence, not strict counted flag evidence.
+- ICM has a new flag-consistent 1M run: `xyDeng_ppo_icm_flag_1m_seed1_1780796302`, with 6 training episodes where `episode_flag_get=1`.
+- Disagreement has strict training-time completion evidence in `xyDeng_ppo_disagreement_world1_eval_1m_seed1_1780716237`, with 10 episodes where `episode_flag_get=1`.
+- Pure PPO has a new flag-consistent 1M run: `xyDeng_ppo_extrinsic_flag_1m_seed1_1780806585`, with 10 episodes where `episode_flag_get=1`.
 
 ## What To Commit
 

@@ -1,0 +1,4 @@
+method,run,global_step,episodes,device,train_flag_get_count,train_max_x_pos,first_flag_global_step,first_flag_episode,first_flag_reward,best_val_total_reward,best_val_mean_max_x,best_val_single_max_x
+ICM,xyDeng_ppo_icm_flag_1m_seed1_1780796302,1000000,7798,cuda,6,3161,82450,577,3036.0,945.0,1037.0,1947
+Disagreement,xyDeng_ppo_disagreement_world1_eval_1m_seed1_1780716237,1000000,7785,cpu,10,3161,117353,812,3042.0,625.6666666666666,708.5,1666
+PPO,xyDeng_ppo_extrinsic_flag_1m_seed1_1780806585,1000000,7611,cuda,10,3161,21765,135,3010.0,1193.6666666666667,1328.6666666666667,2471
