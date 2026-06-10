@@ -14,6 +14,7 @@ Curated evidence:
 - patched local RLLTE dependency: `rllte/`
 - final metrics and reports: `results/`
 - representative videos: `media/`
+- presentation deck and embedded GIF assets: `presentation/`
 
 Important boundary:
 
