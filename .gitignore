@@ -49,3 +49,7 @@ smoke_logs/
 !docs/
 !docs/**
 !docs/**
+
+# Final adopted complete run directories, including checkpoints.
+!最终采用结果/
+!最终采用结果/**

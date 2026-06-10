@@ -15,6 +15,7 @@ Curated evidence:
 - final metrics and reports: `results/`
 - representative videos: `media/`
 - presentation deck and embedded GIF assets: `presentation/`
+- final adopted complete runs: `最终采用结果/`
 
 Important boundary:
 
