@@ -1,0 +1,71 @@
+{
+  "summary": {
+    "mean_ext_reward": 731.3333333333334,
+    "mean_int_reward": 0.0,
+    "mean_total_reward": 731.3333333333334,
+    "mean_max_x_pos": 809.3333333333334,
+    "mean_decision_steps": 105.33333333333333
+  },
+  "episodes": [
+    {
+      "split": "test",
+      "eval_mode": "sample",
+      "global_step": 100000,
+      "global_decision_step": 100000,
+      "approx_global_env_frame_step": 400000,
+      "env_id": "SuperMarioBros-1-1-v0",
+      "episode": 0,
+      "ext_reward": 251.0,
+      "int_reward": 0.0,
+      "total_reward": 251.0,
+      "decision_steps": 32,
+      "approx_env_frame_steps": 128,
+      "final_x_pos": 315,
+      "max_x_pos": 315,
+      "mean_x_pos": 152.875,
+      "timeout": 0,
+      "max_episode_steps": 3000,
+      "frame_skip": 4
+    },
+    {
+      "split": "test",
+      "eval_mode": "sample",
+      "global_step": 100000,
+      "global_decision_step": 100000,
+      "approx_global_env_frame_step": 400000,
+      "env_id": "SuperMarioBros-1-1-v0",
+      "episode": 1,
+      "ext_reward": 765.0,
+      "int_reward": 0.0,
+      "total_reward": 765.0,
+      "decision_steps": 150,
+      "approx_env_frame_steps": 600,
+      "final_x_pos": 852,
+      "max_x_pos": 852,
+      "mean_x_pos": 530.9266666666666,
+      "timeout": 0,
+      "max_episode_steps": 3000,
+      "frame_skip": 4
+    },
+    {
+      "split": "test",
+      "eval_mode": "sample",
+      "global_step": 100000,
+      "global_decision_step": 100000,
+      "approx_global_env_frame_step": 400000,
+      "env_id": "SuperMarioBros-1-1-v0",
+      "episode": 2,
+      "ext_reward": 1178.0,
+      "int_reward": 0.0,
+      "total_reward": 1178.0,
+      "decision_steps": 134,
+      "approx_env_frame_steps": 536,
+      "final_x_pos": 1261,
+      "max_x_pos": 1261,
+      "mean_x_pos": 664.6865671641791,
+      "timeout": 0,
+      "max_episode_steps": 3000,
+      "frame_skip": 4
+    }
+  ]
+}

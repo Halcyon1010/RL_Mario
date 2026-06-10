@@ -1,0 +1,54 @@
+experiment:
+  name: ppo_smoke
+  seed: 1
+  run_dir: runs
+
+env:
+  train_env_id: SuperMarioBros-1-1-v0
+  val_env_ids:
+    - SuperMarioBros-1-1-v0
+  test_env_ids:
+    - SuperMarioBros-1-1-v0
+  eval_env_ids:
+    - SuperMarioBros-1-1-v0
+  action_space: SIMPLE_MOVEMENT
+  frame_skip: 4
+  frame_stack: 4
+  image_size: 84
+  train_max_episode_steps: 300
+  val_max_episode_steps: 300
+  test_max_episode_steps: 300
+  eval_max_episode_steps: 300
+
+training:
+  total_timesteps: 256
+  rollout_steps: 64
+  update_epochs: 1
+  minibatch_size: 32
+  learning_rate: 0.0001
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_coef: 0.1
+  value_coef: 0.5
+  entropy_coef: 0.05
+  max_grad_norm: 0.5
+  target_kl: 0.03
+  reward_clip: true
+  reward_clip_low: -1.0
+  reward_clip_high: 1.0
+  eval_interval: 128
+  eval_episodes: 1
+  test_episodes: 1
+  eval_modes:
+    - greedy
+    - sample
+  best_model_eval_mode: sample
+  save_interval: 256
+  device: auto
+
+wandb:
+  enabled: false
+  project: mario-intrinsic-ppo
+  entity:
+  mode: online
+  secrets_path: secrets/wandb.json
