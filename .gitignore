@@ -51,5 +51,5 @@ smoke_logs/
 !docs/**
 
 # Final adopted complete run directories, including checkpoints.
-!最终采用结果/
-!最终采用结果/**
+!final_selected_runs/
+!final_selected_runs/**

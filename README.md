@@ -15,12 +15,12 @@ Curated evidence:
 - final metrics and reports: `results/`
 - representative videos: `media/`
 - presentation deck and embedded GIF assets: `presentation/`
-- final adopted complete runs: `最终采用结果/`
+- final selected complete runs: `final_selected_runs/`
 
 Important boundary:
 
-- Full training artifacts are not committed.
-- Checkpoints are not committed.
+- Full non-selected training artifacts are not committed.
+- Checkpoints are committed only for the three final selected runs under `final_selected_runs/`.
 - Interrupted runs are not used as final evidence.
 - Current results use a single seed, so they should be reported as observed results under this setting, not as statistically significant conclusions.
 
