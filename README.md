@@ -2,6 +2,8 @@
 
 This workspace contains the first-stage Docker environment for the Super Mario Bros reinforcement learning project.
 
+For xyDeng's World 1-1-only selected outputs, see `final_selected_runs_1_1/`.
+
 It includes both:
 
 - the legacy Gym stack used by `gym-super-mario-bros`
