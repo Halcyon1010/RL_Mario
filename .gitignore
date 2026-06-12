@@ -1,21 +1,52 @@
-# Local caches
+# Python
 __pycache__/
 *.py[cod]
+*.pyo
 .pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
 
-# Training checkpoints and model weights
-*.pt
-*.pth
-*.ckpt
-*.zip
-**/checkpoints/
+# Environments
+.venv/
+venv/
+env/
+*.egg-info/
 
-# Runtime logs
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.lnk
+
+# Secrets and trackers
+.env
+.env.*
+secrets/
+wandb/
+
+# Generated training outputs
+runs/
+outputs/
+videos/
+long_logs/
+smoke_logs/
+eval_search/
 *.log
 *.err
 *.pid
+**/runs/**/checkpoints/
 
-# Optional local tools/config
-.env
-.venv/
-venv/
+# Raw archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Keep curated evidence folders.
+!final_selected_runs/
+!final_selected_runs/**
