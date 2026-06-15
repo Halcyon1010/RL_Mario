@@ -10,6 +10,7 @@ __pycache__/
 .venv/
 venv/
 env/
+node_modules/
 *.egg-info/
 
 # OS / IDE
@@ -41,6 +42,11 @@ eval_search/
 *.tar
 *.tar.gz
 *.tgz
+
+# Presentation build intermediates
+presentation/preview_*/
+presentation/*.inspect.ndjson
+presentation/chengzhiwei_template.pptx
 
 # Model checkpoints
 *.pt
